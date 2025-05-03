@@ -7,7 +7,7 @@ type ProductServiceImpl struct {
 }
 
 // NewProductService creates a new ProductServiceImpl with the given repository
-func NewProductService(repo domain.ProductRepository) domain.ProductService {
+func NewProductService(repo domain.ProductRepository) *ProductServiceImpl {
 	return &ProductServiceImpl{
 		productRepository: repo,
 	}

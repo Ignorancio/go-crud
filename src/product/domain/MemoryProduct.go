@@ -6,7 +6,7 @@ type MemoryProduct struct {
 }
 
 // NewMemoryRepository creates a new in-memory product repository
-func NewMemoryRepository() ProductRepository {
+func NewMemoryRepository() *MemoryProduct {
 	return &MemoryProduct{
 		products: make([]Product, 0),
 		index:    0,
